@@ -1,0 +1,647 @@
+/* الوضع الليلي */
+body.dark-mode {
+    background-color: #000;
+    color: #fff;
+}
+
+
+body.dark-mode .card {
+    background-color: #222;
+    border-color: #444;
+}
+
+body.light-mode .btn-outline-light {
+    width: 100%;
+    height: 100%;
+    --color: rgba(114, 114, 114, 0.3);
+    background-color: #191a1a;
+    background-image: linear-gradient(0deg, transparent 24%, var(--color) 25%, var(--color) 26%, transparent 27%,transparent 74%, var(--color) 75%, var(--color) 76%, transparent 77%,transparent),
+        linear-gradient(90deg, transparent 24%, var(--color) 25%, var(--color) 26%, transparent 27%,transparent 74%, var(--color) 75%, var(--color) 76%, transparent 77%,transparent);
+    background-size: 55px 55px;
+    color: #000;
+    border-color: #000;
+}
+
+/* الوضع التلقائي */
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: #000;
+        color: #fff;
+    }
+}
+
+
+/* الخلفية */
+.background-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    overflow: hidden;
+}
+
+/* الأشكال المتحركة */
+.shape {
+    position: absolute;
+    border-radius: 50%;
+    background: rgba(255, 215, 0, 0.3); /* ذهبي شفاف */
+    animation: float 10s infinite ease-in-out;
+    filter: blur(10px);
+}
+
+.circle {
+    width: 80px;
+    height: 80px;
+    top: 10%;
+    left: 20%;
+    animation-duration: 12s;
+}
+
+.square {
+    width: 100px;
+    height: 100px;
+    border-radius: 0;
+    top: 40%;
+    left: 60%;
+    animation-duration: 15s;
+}
+
+.triangle {
+    width: 0;
+    height: 0;
+    border-left: 60px solid transparent;
+    border-right: 60px solid transparent;
+    border-bottom: 100px solid rgba(255, 215, 0, 0.3);
+    top: 70%;
+    left: 10%;
+    animation-duration: 18s;
+}
+
+/* أيقونات السوشيال ميديا */
+.social-icon {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    animation: float 10s infinite ease-in-out;
+    filter: blur(5px);
+}
+
+.facebook {
+    background-image: url('/Image/facebook-icon.png');
+    top: 30%;
+    left: 15%;
+    animation-duration: 20s;
+}
+
+.twitter {
+    background-image: url('/Image/twitter-icon.png');
+    top: 50%;
+    left: 70%;
+    animation-duration: 12s;
+}
+
+.instagram {
+    background-image: url('/Image/instagram-icon.png');
+    top: 80%;
+    left: 30%;
+    animation-duration: 15s;
+}
+
+/* حركة الطفو ايقونات التواصل */
+@keyframes float {
+    0% {
+        transform: translateY(0) translateX(0) scale(1);
+    }
+    50% {
+        transform: translateY(-20px) translateX(10px) scale(1.2);
+    }
+    100% {
+        transform: translateY(0) translateX(0) scale(1);
+    }
+}
+/* تصغير ارتفاع الـ navbar وزيادة حجم النصوص */
+
+
+/*--------------------------------------------------------------------------------------------*/
+/* Navbar */
+
+body.dark-mode .navbar {
+    background-color: #000000;
+}
+
+body.light-mode .navbar {
+    background-color: #f8f9fa;
+}
+
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #ffffff;
+    z-index: 9999;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 10px 0;
+    transition: top 0.3s ease-in-out;
+}
+
+/* إضافة الـ line المتحرك أسفل الـ Navbar */
+.navbar-bottom-line {
+    height: 2px;
+    width: 100%;
+    margin-top: -5px;
+    background: linear-gradient(to right, #007bff, #ff6f61, #00d1b2, #f7b731);
+    animation: borderAnimation 4s linear infinite;
+    position: fixed;
+}
+
+
+/* الأنيميشن الخاصة بالحدود المتحركة تحت الـ Navbar */
+@keyframes borderAnimation {
+    0% {
+        background: #007bff;
+    }
+    25% {
+        background: #ff6f61;
+    }
+    50% {
+        background: #00d1b2;
+    }
+    75% {
+        background: #f7b731;
+    }
+    100% {
+        background: #007bff;
+    }
+}
+
+/* خصائص الـ Navbar لتمركز الأقسام */
+.navbar-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.nav-item {
+    margin: 0 20px;
+    font-size: 16px;
+}
+
+.nav-item a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 15px 15px;
+    display: block;
+}
+
+/* خصائص اللوجو */
+.navbar-brand {
+    position: absolute;
+    right: 20px;
+    font-size: 24px;
+    color: #007bff;
+    font-weight: bold;
+}
+
+/* خصائص زر التواصل */
+.contact-btn {
+    position: absolute;
+    left: 20px;
+    background-color: #1500ff;
+    color: white;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+.contact-btn:hover {
+    background-color: #1f53b2;
+}
+
+
+/* لتمرير المحتوى أسفل الـ Navbar في حالة تثبيته */
+body {
+    margin-top: 80px; /* يضيف مساحة للمحتوى أسفل الـ Navbar */
+}
+
+/* التأثيرات عند التمرير */
+.navbar.scrolled {
+    background-color: rgba(255, 255, 255, 0.9); /* تغيير خلفية الـ Navbar عند التمرير */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* --------------------------------------------------------------*/
+
+/* تحسين مظهر العناوين */
+h2 {
+    font-family: "Cairo", sans-serif;
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+/* تنسيق قسم من نحن */
+#who-we-are .img-fluid {
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); */
+    transition: transform 0.3s ease;
+}
+
+#who-we-are .img-fluid:hover {
+    transform: scale(1.05);
+}
+
+
+
+/* تنسيق النصوص */
+p.lead {
+    font-size: 1.2rem;
+    line-height: 1.8;
+}
+
+/* تخصيص الألوان للوضعين الليلي والنهاري */
+body.light-mode h2 {
+    color: var(--primary-color);
+}
+
+body.dark-mode h2 {
+    color: var(--primary-color);
+}
+
+body.light-mode p {
+    color: #333;
+}
+
+body.dark-mode p {
+    color: #ccc;
+}
+
+
+.about {
+    background-color: #222;
+    padding: 10%;
+}
+
+
+body.dark-mode .toggle-switch {
+    background-color: #333;
+}
+
+body.dark-mode .toggle-label {
+    color: #ddd;
+}
+
+body.dark-mode .toggle-slider {
+    left: calc(100% - 25px); /* يحرك الزر */
+}
+.navbar.scrolled {
+    background-color: rgba(0, 0, 0, 0.9) !important;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s ease-in-out;
+}
+/*service*/
+
+
+.service-section {
+    padding: 60px 0;
+}
+
+.service-card {
+    background: #2f2f2f;
+    border-radius: 15px;
+    text-align: center;
+    padding: 30px;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 2px solid transparent;
+    background-clip: padding-box;
+    animation: borderAnimation 4s linear infinite;
+}
+
+/* الأنيميشن الخاصة بالحدود المتحركة */
+@keyframes borderAnimation {
+    0% {
+        border-color: #007bff;
+    }
+    25% {
+        border-color: #ff6f61;
+    }
+    50% {
+        border-color: #00d1b2;
+    }
+    75% {
+        border-color: #f7b731;
+    }
+    100% {
+        border-color: #007bff;
+    }
+}
+
+/* تأثير hover لتحسين الإحساس بالتفاعل */
+.service-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* تحديد الأيقونات داخل الكارد */
+.service-card i {
+    font-size: 50px;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+.service-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.service-card p {
+    font-size: 14px;
+    color: #6c757d;
+}
+
+
+/* إعدادات الأزرار الطافية */
+.floating-buttons {
+    position: fixed;
+    bottom: 20px; /* المسافة من أسفل الصفحة */
+    right: 20px; /* المسافة من يمين الصفحة */
+    z-index: 1000; /* لضمان ظهورها فوق باقي العناصر */
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* مسافة بين الأزرار */
+}
+
+/* زر الواتساب */
+.btn-whatsapp {
+    background-color: #25D366; /* لون خلفية الواتساب */
+    border-radius: 50%; /* لجعل الزر دائريًا */
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* ظل */
+    transition: transform 0.2s ease-in-out;
+}
+
+/* زر المكالمات */
+.btn-call {
+    background-color: #2bad58; /* لون خلفية زر الاتصال */
+    border-radius: 50%; /* لجعل الزر دائريًا */
+    width: 50px;
+    height: 50px;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* ظل */
+    transition: transform 0.2s ease-in-out;
+}
+
+/* تأثير التحويم */
+.btn-whatsapp:hover,
+.btn-call:hover {
+    transform: scale(1.1); /* تكبير الزر قليلاً عند التحويم */
+}
+
+/* الأيقونات */
+.icon {
+    width: 60%;
+    height: auto;
+}
+
+
+.dark-input {
+    background-color: #343a40; /* لون داكن */
+    color: #ffffff; /* النص باللون الأبيض */
+    border: 1px solid #495057; /* حدود الخانة */
+}
+.dark-input::placeholder {
+    color: #adb5bd; /* لون النص داخل الخانة */
+}
+.dark-input:focus {
+    background-color: #495057; /* لون أغمق عند التركيز */
+    color: #ffffff;
+    border-color: #6c757d; /* حدود عند التركيز */
+    box-shadow: none;
+}
+
+
+
+
+/* --------------------------
+--------------------------------------------- */
+
+
+/* تخصيص تنسيق الزر */
+.contactBtn {
+    background-color: #007BFF; /* اللون الأخضر */
+    color: white; /* النص باللون الأبيض */
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+  }
+  
+  .contactBtn:hover {
+    background-color: #45a049; /* لون أغمق عند التحويم */
+  }
+  
+  /* تخصيص تنسيق الـ modal */
+  .modal-content {
+    background-color: #333; /* خلفية داكنة */
+    color: white; /* النص داخل المربع باللون الأبيض */
+    border-radius: 10px;
+    position: relative;
+    text-align: center;
+  }
+  
+  .modal-header {
+    background-color: #3b3b3b; /* رأس الـ modal باللون الأزرق */
+    color: white;
+    padding: 15px;
+  }
+  
+  .modal-header .btn-close {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    background-color: transparent;
+    border: none;
+  }
+  
+  .modal-title {
+    color: white; /* عنوان المربع باللون الأبيض */
+    font-size: 1.5rem;
+  }
+  
+  .modal-body {
+    padding: 20px;
+  }
+  
+  h6 {
+    font-size: 1.2rem;
+    color: #fff;
+    margin-bottom: 20px;
+  }
+  
+  .social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+  }
+  
+  .social-icons a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .social-icons a:hover {
+    color: #00aced; /* تلوين عند التمرير */
+  }
+  
+  /* تخصيص تنسيق الزر داخل الـ modal */
+  .btn-primary {
+    background-color: #007BFF;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+  }
+  
+  .btn-primary:hover {
+    background-color: #0056b3;
+  }
+  
+  /* تخصيص المودال ليكون في المنتصف */
+  .modal-dialog {
+    max-width: 600px;
+    margin: 10% auto;
+  }
+  
+  /* تخصيص خلفية الـ modal */
+  .modal-backdrop {
+    background-color: rgba(0, 0, 0, 0.7); /* خلفية مظلمة */
+  }
+  
+
+
+#contact .img-fluid{
+    margin-right: 70px; /* إضافة مسافة من جهة اليمين */
+    max-width: 90%; /* تصغير حجم الصورة */
+
+}
+
+/* ---------------------------------------------- */
+
+/*تخصيص nav بار كلمة اعمالنا */
+
+.dropdown-menu {
+    background-color: #3b3b3b; /* لون خلفية القائمة */
+    border-radius: 5px; /* زوايا دائرية */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* ظل خفيف */
+  }
+  
+  .dropdown-item {
+    color: #ffffff; /* لون النص */
+    font-weight: 500; /* وزن النص */
+    padding: 10px 15px; /* مسافة داخلية */
+    transition: all 0.3s ease; /* تأثير عند التحريك */
+  }
+  
+  .dropdown-item:hover {
+    background-color: #007bff; /* لون الخلفية عند التمرير */
+    color: #fff; /* لون النص عند التمرير */
+  }
+  
+/* تنسيق القائمة المنسدلة */
+/* تنسيق العنوان */
+.category-list h1 {
+    text-align: center; /* لجعل النص في المنتصف */
+    background-color: rgba(35, 35, 35, 0.6); /* خلفية شفافة */
+    color: #ffffff; /* لون النص */
+    padding:80px 20px; /* مسافات داخلية */
+    border-radius: 10px; /* زوايا مستديرة */
+    display: inline-block; /* لتحديد عرض النص فقط */
+    margin: 20px auto; /* مسافة علوية وسفلية مع توسيط */
+    width: 100%;
+}
+
+/* تنسيق حاوية المشاريع */
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 عناصر في كل صف */
+    gap: 15px; /* المسافة بين العناصر */
+    justify-content: center;
+}
+
+/* تنسيق الكارت الخاص بكل مشروع */
+.project-card {
+    background-color: #333;
+    border: 1px solid #333;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    margin: 5%;
+}
+
+.project-card:hover {
+    transform: scale(1.05);
+}
+
+.project-card iframe {
+    border-radius: 10px 10px 0 0; /* جعل الحواف العلوية مستديرة */
+}
+
+.project-card .card-body {
+    padding: 15px;
+    text-align: center;
+}
+
+.project-card .card-title {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.project-card .btn-service {
+    margin-top: 10px;
+    background-color: #0069d9;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.project-card .btn-service:hover {
+    background-color: #ff3838;
+}
+
+/* تنسيق زر "عرض المزيد" */
+#showMoreButton {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #0069d9;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    cursor: pointer;
+}
+
+#showMoreButton:hover {
+    background-color: #0056b3;
+}
