@@ -91,21 +91,21 @@ body.light-mode .btn-outline-light {
 }
 
 .facebook {
-    background-image: url('/Image/facebook-icon.png');
+    background-image: url('Image/facebook-icon.png');
     top: 30%;
     left: 15%;
     animation-duration: 20s;
 }
 
 .twitter {
-    background-image: url('/Image/twitter-icon.png');
+    background-image: url('Image/twitter-icon.png');
     top: 50%;
     left: 70%;
     animation-duration: 12s;
 }
 
 .instagram {
-    background-image: url('/Image/instagram-icon.png');
+    background-image: url('Image/instagram-icon.png');
     top: 80%;
     left: 30%;
     animation-duration: 15s;
