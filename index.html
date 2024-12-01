@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="ar">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Black Marketing</title>
+    <!-- استيراد Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- استيراد الخطوط -->
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+
+    <!-- استيراد CSS مخصص -->
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body dir="rtl" class="light-mode">
+
+
+
+    <!-- خلفية متحركة -->
+    <div class="background-animation">
+        <div class="shape circle"></div>
+        <div class="shape square"></div>
+        <div class="shape triangle"></div>
+        <!-- أيقونات السوشيال ميديا -->
+        <div class="social-icon facebook"></div>
+        <div class="social-icon twitter"></div>
+        <div class="social-icon instagram"></div>
+    </div>
+
+
+    <!-- الهيدر -->
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg co bg-dark">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="active" href="#home">الصفحة الرئيسية</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="services.html">خدماتنا</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#who-we-are">عنا</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">اتصل بنا</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="ourWorkDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            أعمالنا
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="ourWorkDropdown">
+                            <li><a class="dropdown-item" href="#socialMediaSection">تصميمات السوشيال ميديا</a></li>
+                            <li><a class="dropdown-item" href="#videoEditingSection">مونتاج الفيديو</a></li>
+                            <li><a class="dropdown-item" href="#graphicDesignSection">تصميم الجرافيك</a></li>
+                            <li><a class="dropdown-item" href="#webDesignSection">تصميم المواقع</a></li>
+                        </ul>
+                    </li>
+
+                </ul>
+            </div>
+            <a class="navbar-brand" href="#">
+                <img src="/Image/logo.png" alt="Black Marketing" width="10%">
+            </a>
+            <!-- الزر -->
+            <button class="contactBtn" data-bs-toggle="modal" data-bs-target="#contactModal">تواصل معنا</button>
+
+            <!-- المربع المنبثق -->
+            <div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                                aria-label="Close"></button>
+                            <h5 class="modal-title" id="contactModalLabel">تواصل معنا</h5>
+                        </div>
+                        <div class="modal-body">
+                            <h6>اختر طريقة للتواصل التي تناسبك</h6>
+                            <div class="social-icons">
+                                <a href="#"><img src="/Image/phone-call.png" alt="Phone" width="30"></a>
+                                <a href="#"><img src="/Image/whatsapp.png" alt="WhatsApp" width="30"></a>
+                                <a href="#"><img src="/Image/instagram-icon.png" alt="Instagram" width="30"></a>
+                                <a href="#"><img src="/Image/facebook-icon.png" alt="Facebook" width="30"></a>
+                            </div>
+                            <button class="btn btn-primary mt-3" onclick="window.location.href = 'contact.html';">طلب
+                                التواصل</button>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+        </div>
+    </nav>
+    <div class="navbar-bottom-line"></div>
+
+
+
+
+    <!-- أزرار طافية -->
+    <div class="floating-buttons">
+        <!-- زر الواتساب -->
+        <a href="https://wa.me/01090412218" target="_blank" class="btn-whatsapp" aria-label="تواصل عبر واتساب">
+            <img src="/Image/whatsapp.png" alt="واتساب" class="icon">
+        </a>
+        <!-- زر المكالمات -->
+        <a href="tel:01090412218" class="btn-call" aria-label="اتصل الآن">
+            <img src="/Image//phone-call.png" alt="اتصال" class="icon">
+        </a>
+    </div>
+
+
+    <!-- الصفحة الرئيسية -->
+    <section id="home" class="text-center py-5 text-white">
+        <div class="container">
+            <h1 class="display-4">مرحبًا بكم في <span class="text-white">Black Marketing</span></h1>
+            <p class="lead">حلول تسويقية مبتكرة لتحقيق أهدافك.</p>
+            <a href="#services" class="btn btn-primary btn-lg">تعرف على خدماتنا</a>
+        </div>
+    </section>
+
+    <section id="about" class="py-5">
+        <div class="about">
+            <div class="container text-center">
+                <h2 class="text-white mb-4">نبذة عن شركتنا</h2>
+                <p class="lead">
+                    "Black Marketing" هي شركة تسويق رائدة تتمتع بخبرة تمتد لسنوات في تقديم حلول تسويقية مبتكرة ومتكاملة.
+                    نلتزم بمساعدة عملائنا على تحقيق أهدافهم من خلال الجمع بين الإبداع والتقنيات الحديثة، مما يجعلنا
+                    الخيار الأمثل
+                    لتحقيق نجاح مستدام في السوق الرقمي.
+                </p>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- خدماتنا -->
+    <section id="services" class="service-section">
+        <div class="container">
+            <h2 class="text-center mb-5">خدماتنا</h2>
+            <div class="row">
+                <!-- البطاقة 1 -->
+                <div class="col-md-4 mb-4 animate__animated animate__fadeIn">
+                    <div class="service-card">
+                        <i class="fas fa-bullhorn"></i>
+                        <h3 class="service-title"> خدمات التسويق الرقمي</h3>
+                        <p>خدمات التسويق الرقمي للوصول إلى جمهورك بأحدث الطرق.</p>
+                    </div>
+                </div>
+                <!-- البطاقة 2 --  -->
+                <div class="col-md-4 mb-4 animate__animated animate__fadeIn">
+                    <div class="service-card">
+                        <!-- أيقونة السوشيال ميديا -->
+                        <i class="fa fa-object-ungroup" aria-hidden="true"></i>
+                        <h3 class="service-title">تصميمات السوشيال ميديا</h3>
+                        <p>تصميمات سوشيال ميديا لنجاحك الرقمي</p>
+                    </div>
+                </div>
+
+
+                <!-- البطاقة 2 -->
+                <div class="col-md-4 mb-4 animate__animated animate__fadeIn animate__delay-1s">
+                    <div class="service-card">
+                        <i class="fas fa-palette"></i>
+                        <h3 class="service-title">الهوية البصرية</h3>
+                        <p>تصميم هوية متكاملة لتميز علامتك التجارية.</p>
+                    </div>
+                </div>
+                <!-- البطاقة 3 -->
+                <div class="col-md-4 mb-4 animate__animated animate__fadeIn animate__delay-2s">
+                    <div class="service-card">
+                        <i class="fas fa-box"></i>
+                        <h3 class="service-title">تصميم المنتجات</h3>
+                        <p>تصميم إبداعي يلبي احتياجات منتجاتك.</p>
+                    </div>
+                </div>
+
+                <!-- البطاقة 5 -->
+                <div class="col-md-4 mb-4 animate__animated animate__fadeIn animate__delay-4s">
+                    <div class="service-card">
+                        <i class="fas fa-print"></i>
+                        <h3 class="service-title">تصميم المطبوعات</h3>
+                        <p>تصاميم مطبوعة عالية الجودة تلبي توقعاتك.</p>
+                    </div>
+                </div>
+                <!-- البطاقة 6 -->
+                <div class="col-md-4 mb-4 animate__animated animate__fadeIn animate__delay-5s">
+                    <div class="service-card">
+                        <i class="fas fa-code"></i>
+                        <h3 class="service-title">تصميم المواقع والتطبيقات</h3>
+                        <p>تطوير مواقع وتطبيقات عصرية تناسب احتياجاتك.</p>
+                    </div>
+                </div>
+                <!-- البطاقة 7 -->
+                <div class="col-md-4 mb-4 animate__animated animate__fadeIn animate__delay-6s">
+                    <div class="service-card">
+                        <i class="fas fa-thumbs-up"></i>
+                        <h3 class="service-title">إدارة السوشيال ميديا</h3>
+                        <p>إدارة احترافية لحسابات التواصل الاجتماعي.</p>
+                    </div>
+                </div>
+                <!-- البطاقة 8 -->
+                <div class="col-md-4 mb-4 animate__animated animate__fadeIn animate__delay-7s">
+                    <div class="service-card">
+                        <i class="fas fa-search"></i>
+                        <h3 class="service-title">تحسين محركات البحث</h3>
+                        <p>رفع ترتيب موقعك في نتائج البحث.</p>
+                    </div>
+                </div>
+                <!-- البطاقة 9 -->
+                <div class="col-md-4 mb-4 animate__animated animate__fadeIn animate__delay-8s">
+                    <div class="service-card">
+                        <i class="fas fa-dollar-sign"></i>
+                        <h3 class="service-title">حسابات إعلانية مدفوعة</h3>
+                        <p>إعلانات مستهدفة للوصول الأمثل للجمهور.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- قائمة التصنيفات -->
+    <!-- حاوية عرض المشاريع -->
+    <div class="category-list">
+        <h1>بعض أعمالنا </h1>
+        <div id="projectsGrid" class="project-grid"></div>
+
+        <!-- زر عرض المزيد -->
+        <button id="showMoreButton" onclick="goToProjectsPage()">عرض المزيد من المشاريع</button>
+
+    </div>
+
+
+
+    <!-- خدمات الشركة -->
+    <section id="services1" class="py-5">
+        <div class="container">
+
+            <h2 class="text-center mb-4"> اعمالنا</h2>
+            <div class="row row-cols-1 row-cols-md-5 g-4">
+                <div class="col">
+                    <div class="card service-card h-100">
+                        <img src="/Image/service1.jpg" class="card-img-top" alt="Service 1">
+                        <div class="card-body">
+                            <h5 class="card-title">خدمة 1</h5>
+                            <p class="card-text">وصف مختصر للخدمة 1.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card service-card h-100">
+                        <img src="/Image/service1.jpg" class="card-img-top" alt="Service 2">
+                        <div class="card-body">
+                            <h5 class="card-title">خدمة 2</h5>
+                            <p class="card-text">وصف مختصر للخدمة 2.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card service-card h-100">
+                        <img src="/Image/service1.jpg" class="card-img-top" alt="Service 3">
+                        <div class="card-body">
+                            <h5 class="card-title">خدمة 3</h5>
+                            <p class="card-text">وصف مختصر للخدمة 3.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card service-card h-100">
+                        <img src="/Image/service1.jpg" class="card-img-top" alt="Service 4">
+                        <div class="card-body">
+                            <h5 class="card-title">خدمة 4</h5>
+                            <p class="card-text">وصف مختصر للخدمة 4.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card service-card h-100">
+                        <img src="/Image/service1.jpg" class="card-img-top" alt="Service 5">
+                        <div class="card-body">
+                            <h5 class="card-title">خدمة 5</h5>
+                            <p class="card-text">وصف مختصر للخدمة 5.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+    <section id="who-we-are" class="py-5 bg-dark text-white">
+        <div class="container">
+
+            <div class="row align-items-center">
+                <h2 class="text-center text-white mb-4"> من نحن؟ </h2>
+
+                <!-- صورة -->
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <img src="/Image/about-us.png" alt="من نحن" class="img-fluid rounded">
+                </div>
+                <!-- النص -->
+                <div class="col-lg-6">
+                    <h1 class="text-primary">Black Marketing</h1>
+                    <p class="lead">
+                        نحن في "Black Marketing" فريق من المحترفين المبدعين المتخصصين في تقديم مجموعة متنوعة من الخدمات
+                        المتميزة التي تلبي احتياجات السوق المتغيرة. من تصميم الجرافيك إلى حملات السوشيال ميديا، نقدم
+                        حلولًا
+                        مبتكرة تلبي تطلعات عملائنا وتجعل علاماتهم التجارية مميزة.
+                    </p>
+                    <ul>
+                        <li><strong>خدمات الجرافيك:</strong> تصميم إبداعي يلبي كل احتياجاتك.</li>
+                        <li><strong>حملات السوشيال ميديا:</strong> خطط إعلانية مدروسة لزيادة التفاعل.</li>
+                        <li><strong>مونتاج الفيديو:</strong> إخراج بصري احترافي.</li>
+                        <li><strong>فيديوهات أنيميشن:</strong> أفكار متحركة تروي قصصك.</li>
+                        <li><strong>موشن جرافيك:</strong> تصاميم احترافية تلفت الأنظار.</li>
+                        <li>وغيرها من الخدمات التي نضمن من خلالها تحقيق أعلى جودة.</li>
+                    </ul>
+                    <a href="#services" class="btn btn-white mt-3">اكتشف خدماتنا</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- تواصل معنا -->
+    <section id="contact" class="py-2">
+        <div class="container">
+            <div class="row align-items-center">
+                <!-- القسم الخاص بالنموذج -->
+                <div class="col-lg-6">
+                    <h2 class="text-center mb-4">تواصل معنا وخلينا نبدء رحلة نجاحنا سوا</h2>
+
+                    <form action="https://formspree.io/f/mgvenvjb" method="POST">
+                        <div class="row">
+                            <!-- الاسم بالكامل -->
+                            <div class="col-md-6 mb-3">
+                                <label for="fullName" class="form-label">الاسم بالكامل <span
+                                        class="text-danger">*</span></label>
+                                <input type="text" class="form-control dark-input" id="fullName" name="fullName"
+                                    placeholder="أدخل اسمك بالكامل" required>
+                            </div>
+                            <!-- البريد الإلكتروني -->
+                            <div class="col-md-6 mb-3">
+                                <label for="email" class="form-label">البريد الإلكتروني</label>
+                                <input type="email" class="form-control dark-input" id="email" name="email"
+                                    placeholder="أدخل بريدك الإلكتروني">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <!-- اسم الشركة -->
+                            <div class="col-md-6 mb-3">
+                                <label for="company" class="form-label">اسم الشركة</label>
+                                <input type="text" class="form-control dark-input" id="company" name="company"
+                                    placeholder="أدخل اسم الشركة">
+                            </div>
+                            <!-- عنوان الشركة -->
+                            <div class="col-md-6 mb-3">
+                                <label for="companyAddress" class="form-label">عنوان الشركة</label>
+                                <input type="text" class="form-control dark-input" id="companyAddress"
+                                    name="companyAddress" placeholder="أدخل عنوان الشركة">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <!-- الدولة -->
+                            <div class="col-md-6 mb-3">
+                                <label for="country" class="form-label">البلد <span class="text-danger">*</span></label>
+                                <input type="text" class="form-control dark-input" id="country" name="country"
+                                    placeholder="اختر دولتك" required>
+                            </div>
+                            <!-- رقم الهاتف -->
+                            <div class="col-md-6 mb-3">
+                                <label for="phone" class="form-label">رقم الهاتف <span
+                                        class="text-danger">*</span></label>
+                                <input type="tel" class="form-control dark-input" id="phone" name="phone"
+                                    placeholder="أدخل رقم الهاتف" required>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <!-- رقم الواتساب -->
+                            <div class="col-md-6 mb-3">
+                                <label for="whatsapp" class="form-label">رقم الواتساب لسهولة التواصل <span
+                                        class="text-danger">*</span></label>
+                                <input type="tel" class="form-control dark-input" id="whatsapp" name="whatsapp"
+                                    placeholder="أدخل رقم الواتساب" required>
+                            </div>
+                            <!-- الخدمة المطلوبة -->
+                            <div class="col-md-6 mb-3">
+                                <label for="service" class="form-label">الخدمة المطلوبة <span
+                                        class="text-danger">*</span></label>
+                                <select class="form-control dark-input" id="service" name="service" required>
+                                    <option value="" disabled selected>اختر الخدمة المطلوبة</option>
+                                    <option value="تصميم مواقع إلكترونية">تصميم مواقع إلكترونية</option>
+                                    <option value="تطوير تطبيقات موبايل">تطوير تطبيقات موبايل</option>
+                                    <option value="إدارة حملات تسويقية">إدارة حملات تسويقية</option>
+                                    <option value="تصميم الجرافيك">تصميم الجرافيك</option>
+                                    <option value="تحرير الفيديو">تحرير الفيديو</option>
+                                </select>
+                            </div>
+                        </div>
+                        <!-- زر الإرسال -->
+                        <button type="submit" class="btn btn-primary w-100">إرسال</button>
+                    </form>
+                </div>
+                <!-- القسم الخاص بالصورة -->
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <img src="/Image/Contact us-rafiki.svg" alt="صورة توضيحية" class="img-fluid custom-image">
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- الفوتر -->
+    <footer class="bg-dark text-center text-white py-3">
+        <div class="container">
+            <p>© جميع الحقوق محفوظة لدى Black Marketing</p>
+            <div class="social-icons">
+                <a href="#"><img src="/Image/facebook-icon.png" alt="Phone" width="30"></a>
+                <a href="#"><img src="/Image/instagram-icon.png" alt="Phone" width="30"></a>
+                <a href="#"><img src="/Image/whatsapp.png" alt="Phone" width="30"></a>
+
+            </div>
+        </div>
+    </footer>
+
+    <!-- استيراد Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
+
+
+    <!-- استيراد ملف JS -->
+    <script src="/js/script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+
+</body>
+
+</html>

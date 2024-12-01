@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="ar">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Black Marketing</title>
+    <!-- استيراد Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- استيراد الخطوط -->
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+    <!-- استيراد CSS مخصص -->
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/cotact.css">
+    <link rel="stylesheet" href="/css/portfolio.css">
+</head>
+
+<body>
+
+    <body dir="rtl" class="dark-mode">
+
+        <!-- الهيدر -->
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg co bg-dark">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a href="#" onclick="window.location.href = '/index.html';">الرئيسية</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./services.html">خدماتنا</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#who-we-are">عنا</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">اتصل بنا</a>
+                        </li>
+                    </ul>
+                </div>
+                <a class="navbar-brand" href="#">
+                    <img src="/Image/logo.png" alt="Black Marketing" width="10%">
+                </a>
+                <!-- الزر -->
+                <button class="contactBtn" data-bs-toggle="modal" data-bs-target="#contactModal">تواصل معنا</button>
+
+                <!-- المربع المنبثق -->
+                <div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                                <h5 class="modal-title" id="contactModalLabel">تواصل معنا</h5>
+                            </div>
+                            <div class="modal-body">
+                                <h6>اختر طريقة للتواصل التي تناسبك</h6>
+                                <div class="social-icons">
+                                    <a href="#"><img src="/Image/phone-call.png" alt="Phone" width="30"></a>
+                                    <a href="#"><img src="/Image/whatsapp.png" alt="WhatsApp" width="30"></a>
+                                    <a href="#"><img src="/Image/instagram-icon.png" alt="Instagram" width="30"></a>
+                                    <a href="#"><img src="/Image/facebook-icon.png" alt="Facebook" width="30"></a>
+                                </div>
+                                <button class="btn btn-primary mt-3"
+                                    onclick="document.getElementById('contact').scrollIntoView({behavior: 'smooth'});">طلب
+                                    التواصل</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+        </nav>
+        <div class="navbar-bottom-line"></div>
+        <section class="main-section">
+
+            <!-- بانر الخصم -->
+            <div class="promo-banner py-4 text-center bg-dark">
+                <h2 class="promo-title">⚡ عروض خاصة لفترة محدودة! ⚡</h2>
+                <p class="promo-description">احصل على خصم 20% على خدمات تصميم السوشيال ميديا!</p>
+                <button class="btn btn-primary promo-btn">اطلب الآن</button>
+            </div>
+
+        </section>
+
+        <!-- أزرار طافية -->
+        <div class="floating-buttons">
+            <div class="btn-container">
+                <!-- زر الواتساب -->
+                <a href="https://wa.me/01090412218" target="_blank" class="btn-whatsapp" aria-label="تواصل عبر واتساب">
+                    <img src="/Image/whatsapp.png" alt="واتساب" class="icon">
+                </a>
+                <!-- زر المكالمات -->
+                <a href="tel:01090412218" class="btn-call" aria-label="اتصل الآن">
+                    <img src="/Image/phone-call.png" alt="اتصال" class="icon">
+                </a>
+            </div>
+        </div>
+
+
+        
+
+        <section class="latest-works-section">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                <path fill="#f3f4f5" fill-opacity="1" d="M0,224L0,224L45,224L45,32L90,32L90,288L135,288L135,96L180,96L180,160L225,160L225,160L270,160L270,32L315,32L315,224L360,224L360,160L405,160L405,160L450,160L450,32L495,32L495,0L540,0L540,288L585,288L585,256L630,256L630,256L675,256L675,192L720,192L720,96L765,96L765,64L810,64L810,128L855,128L855,192L900,192L900,64L945,64L945,160L990,160L990,224L1035,224L1035,256L1080,256L1080,96L1125,96L1125,256L1170,256L1170,96L1215,96L1215,224L1260,224L1260,32L1305,32L1305,288L1350,288L1350,192L1395,192L1395,0L1440,0L1440,0L1395,0L1395,0L1350,0L1350,0L1305,0L1305,0L1260,0L1260,0L1215,0L1215,0L1170,0L1170,0L1125,0L1125,0L1080,0L1080,0L1035,0L1035,0L990,0L990,0L945,0L945,0L900,0L900,0L855,0L855,0L810,0L810,0L765,0L765,0L720,0L720,0L675,0L675,0L630,0L630,0L585,0L585,0L540,0L540,0L495,0L495,0L450,0L450,0L405,0L405,0L360,0L360,0L315,0L315,0L270,0L270,0L225,0L225,0L180,0L180,0L135,0L135,0L90,0L90,0L45,0L45,0L0,0L0,0Z"></path>
+              </svg>
+            <div class="latest-works-content">
+                <h2>أحدث أعمالنا</h2>
+                <p>نحن في Black Marketing نقدم حلولاً تسويقية مبتكرة تهدف إلى تعزيز النجاح والنمو لعملائنا الكرام.</p>
+            </div>
+        </section>
+        
+        <!-- بقية المحتوى هنا -->
+        
+        
+
+
+
+
+
+        <section id="portfolio" class="portfolio-section dark-mode">
+            <div class="container">
+                <!-- قائمة منسدلة بالتصنيفات -->
+                <div class="dropdown mb-4">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="categoryDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                       اقسام اخرى
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="categoryDropdown">
+                        <li><a class="dropdown-item" href="#" data-category="social-media">سوشيال ميديا</a></li>
+                        <li><a class="dropdown-item" href="#" data-category="digital-marketing">خدمات التسويق الرقمي</a></li>
+                        <li><a class="dropdown-item" href="#" data-category="visual-identity">الهوية البصرية</a></li>
+                        <li><a class="dropdown-item" href="#" data-category="product-design">تصميم المنتجات</a></li>
+                        <li><a class="dropdown-item" href="#" data-category="print-design">تصميم المطبوعات</a></li>
+                        <li><a class="dropdown-item" href="#" data-category="website-design">تصميم المواقع</a></li>
+                        <li><a class="dropdown-item" href="#" data-category="app-design">تصميم التطبيقات</a></li>
+                        <li><a class="dropdown-item" href="#" data-category="ad-campaigns">حملات إعلانية</a></li>
+                    </ul>
+                </div>
+        
+                <!-- عرض الأعمال داخل كل تصنيف -->
+                <div id="projects-container" class="projects-container">
+                    <!-- تصنيف سوشيال ميديا -->
+                    <div class="category" id="social-media" style="display:block;">
+                        <h2 class="category-title">سوشيال ميديا</h2>
+                        <div class="row">
+                            <!-- الكروت لكل مشروع -->
+                            <!-- تكرار الكارد 10 مرات -->
+                            <div class="col-md-2 mb-4">
+                                <div class="card project-card shadow-sm">
+                                    <iframe src="https://www.behance.net/embed/project/198384227?ilo0=1" height="316" width="100%" allowfullscreen lazyload frameborder="0"></iframe>
+                                    <div class="card-body text-center">
+                                        <h5 class="card-title"> Social media Design Food </h5>
+                                        <button class="btn btn-service">طلب خدمة مشابهة</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-2 mb-4">
+                                <div class="card project-card shadow-sm">
+                                    <iframe src="https://www.behance.net/embed/project/203966885?ilo0=1" height="316" width="100%" allowfullscreen lazyload frameborder="0" allow="clipboard-write" refererPolicy="strict-origin-when-cross-origin"></iframe>
+                                    <div class="card-body text-center">
+                                        <h5 class="card-title">Social Media Safety House designs</h5>
+                                        <button class="btn btn-service">طلب خدمة مشابهة</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-2 mb-4">
+                                <div class="card project-card shadow-sm">
+                                    <iframe src="https://www.behance.net/embed/project/199600245?ilo0=1" height="316" width="100%" allowfullscreen lazyload frameborder="0"></iframe>
+                                    <div class="card-body text-center">
+                                        <h5 class="card-title">سوشيال ميديا 3</h5>
+                                        <button class="btn btn-service">طلب خدمة مشابهة</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-2 mb-4">
+                                <div class="card project-card shadow-sm">
+                                    <iframe src="https://www.behance.net/embed/project/196178595?ilo0=1" height="316" width="100%" allowfullscreen lazyload frameborder="0"></iframe>
+                                    <div class="card-body text-center">
+                                        <h5 class="card-title">سوشيال ميديا 4</h5>
+                                        <button class="btn btn-service">طلب خدمة مشابهة</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-2 mb-4">
+                                <div class="card project-card shadow-sm">
+                                    <iframe src="https://www.behance.net/embed/project/196178595?ilo0=1" height="316" width="100%" allowfullscreen lazyload frameborder="0"></iframe>
+                                    <div class="card-body text-center">
+                                        <h5 class="card-title">سوشيال ميديا 4</h5>
+                                        <button class="btn btn-service">طلب خدمة مشابهة</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-2 mb-4">
+                                <div class="card project-card shadow-sm">
+                                    <iframe src="https://www.behance.net/embed/project/196178595?ilo0=1" height="316" width="100%" allowfullscreen lazyload frameborder="0"></iframe>
+                                    <div class="card-body text-center">
+                                        <h5 class="card-title">سوشيال ميديا 4</h5>
+                                        <button class="btn btn-service">طلب خدمة مشابهة</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-2 mb-4">
+                                <div class="card project-card shadow-sm">
+                                    <iframe src="https://www.behance.net/embed/project/196178595?ilo0=1" height="316" width="100%" allowfullscreen lazyload frameborder="0"></iframe>
+                                    <div class="card-body text-center">
+                                        <h5 class="card-title">سوشيال ميديا 4</h5>
+                                        <button class="btn btn-service">طلب خدمة مشابهة</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-2 mb-4">
+                                <div class="card project-card shadow-sm">
+                                    <iframe src="https://www.behance.net/embed/project/196178595?ilo0=1" height="316" width="100%" allowfullscreen lazyload frameborder="0"></iframe>
+                                    <div class="card-body text-center">
+                                        <h5 class="card-title">سوشيال ميديا 4</h5>
+                                        <button class="btn btn-service">طلب خدمة مشابهة</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-2 mb-4">
+                                <div class="card project-card shadow-sm">
+                                    <iframe src="https://www.behance.net/embed/project/196178595?ilo0=1" height="316" width="100%" allowfullscreen lazyload frameborder="0"></iframe>
+                                    <div class="card-body text-center">
+                                        <h5 class="card-title">سوشيال ميديا 4</h5>
+                                        <button class="btn btn-service">طلب خدمة مشابهة</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-2 mb-4">
+                                <div class="card project-card shadow-sm">
+                                    <iframe src="https://www.behance.net/embed/project/196178595?ilo0=1" height="316" width="100%" allowfullscreen lazyload frameborder="0"></iframe>
+                                    <div class="card-body text-center">
+                                        <h5 class="card-title">سوشيال ميديا 4</h5>
+                                        <button class="btn btn-service">طلب خدمة مشابهة</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-2 mb-4">
+                                <div class="card project-card shadow-sm">
+                                    <iframe src="https://www.behance.net/embed/project/196178595?ilo0=1" height="316" width="100%" allowfullscreen lazyload frameborder="0"></iframe>
+                                    <div class="card-body text-center">
+                                        <h5 class="card-title">سوشيال ميديا 4</h5>
+                                        <button class="btn btn-service">طلب خدمة مشابهة</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-2 mb-4">
+                                <div class="card project-card shadow-sm">
+                                    <iframe src="https://www.behance.net/embed/project/196178595?ilo0=1" height="316" width="100%" allowfullscreen lazyload frameborder="0"></iframe>
+                                    <div class="card-body text-center">
+                                        <h5 class="card-title">سوشيال ميديا 4</h5>
+                                        <button class="btn btn-service">طلب خدمة مشابهة</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-2 mb-4">
+                                <div class="card project-card shadow-sm">
+                                    <iframe src="https://www.behance.net/embed/project/196178595?ilo0=1" height="316" width="100%" allowfullscreen lazyload frameborder="0"></iframe>
+                                    <div class="card-body text-center">
+                                        <h5 class="card-title">سوشيال ميديا 4</h5>
+                                        <button class="btn btn-service">طلب خدمة مشابهة</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-2 mb-4">
+                                <div class="card project-card shadow-sm">
+                                    <iframe src="https://www.behance.net/embed/project/196178595?ilo0=1" height="316" width="100%" allowfullscreen lazyload frameborder="0"></iframe>
+                                    <div class="card-body text-center">
+                                        <h5 class="card-title">سوشيال ميديا 4</h5>
+                                        <button class="btn btn-service">طلب خدمة مشابهة</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-2 mb-4">
+                                <div class="card project-card shadow-sm">
+                                    <iframe src="https://www.behance.net/embed/project/196178595?ilo0=1" height="316" width="100%" allowfullscreen lazyload frameborder="0"></iframe>
+                                    <div class="card-body text-center">
+                                        <h5 class="card-title">سوشيال ميديا 4</h5>
+                                        <button class="btn btn-service">طلب خدمة مشابهة</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-2 mb-4">
+                                <div class="card project-card shadow-sm">
+                                    <iframe src="https://www.behance.net/embed/project/196178595?ilo0=1" height="316" width="100%" allowfullscreen lazyload frameborder="0"></iframe>
+                                    <div class="card-body text-center">
+                                        <h5 class="card-title">سوشيال ميديا 4</h5>
+                                        <button class="btn btn-service">طلب خدمة مشابهة</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-2 mb-4">
+                                <div class="card project-card shadow-sm">
+                                    <iframe src="https://www.behance.net/embed/project/196178595?ilo0=1" height="316" width="100%" allowfullscreen lazyload frameborder="0"></iframe>
+                                    <div class="card-body text-center">
+                                        <h5 class="card-title">سوشيال ميديا 4</h5>
+                                        <button class="btn btn-service">طلب خدمة مشابهة</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-2 mb-4">
+                                <div class="card project-card shadow-sm">
+                                    <iframe src="https://www.behance.net/embed/project/196178595?ilo0=1" height="316" width="100%" allowfullscreen lazyload frameborder="0"></iframe>
+                                    <div class="card-body text-center">
+                                        <h5 class="card-title">سوشيال ميديا 4</h5>
+                                        <button class="btn btn-service">طلب خدمة مشابهة</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-2 mb-4">
+                                <div class="card project-card shadow-sm">
+                                    <iframe src="https://www.behance.net/embed/project/196178595?ilo0=1" height="316" width="100%" allowfullscreen lazyload frameborder="0"></iframe>
+                                    <div class="card-body text-center">
+                                        <h5 class="card-title">سوشيال ميديا 4</h5>
+                                        <button class="btn btn-service">طلب خدمة مشابهة</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-2 mb-4">
+                                <div class="card project-card shadow-sm">
+                                    <iframe src="https://www.behance.net/embed/project/198384227?ilo0=1" height="316" width="100%" allowfullscreen lazyload frameborder="0"></iframe>
+                                    <div class="card-body text-center">
+                                        <h5 class="card-title">سوشيال ميديا 5</h5>
+                                        <button class="btn btn-service">طلب خدمة مشابهة</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- المزيد من الكروت يمكن إضافتها بنفس الطريقة -->
+                        </div>
+                    </div>
+        
+                    <!-- تصنيف خدمات التسويق الرقمي -->
+                    <div class="category" id="digital-marketing" style="display:none;">
+                        <h2 class="category-title">خدمات التسويق الرقمي</h2>
+                        <div class="row">
+                            <div class="col-md-2 mb-4">
+                                <div class="card project-card shadow-sm">
+                                    <iframe src="https://www.behance.net/embed/project/198384227?ilo0=1" height="316" width="100%" allowfullscreen lazyload frameborder="0"></iframe>
+                                    <div class="card-body text-center">
+                                        <h5 class="card-title"> Social media Design Food </h5>
+                                        <button class="btn btn-service">طلب خدمة مشابهة</button>
+                                    </div>
+                                </div>
+                            </div><!-- تكرار الكارد 10 مرات -->
+                            <div class="col-md-2 mb-4">
+                                <div class="card project-card shadow-sm">
+                                    <iframe src="https://www.behance.net/embed/project/198384227?ilo0=1" height="316" width="100%" allowfullscreen lazyload frameborder="0"></iframe>
+                                    <div class="card-body text-center">
+                                        <h5 class="card-title"> Social media Design Food </h5>
+                                        <button class="btn btn-service">طلب خدمة مشابهة</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-2 mb-4">
+                                <div class="card project-card shadow-sm">
+                                    <iframe src="https://www.behance.net/embed/project/198384227?ilo0=1" height="316" width="100%" allowfullscreen lazyload frameborder="0"></iframe>
+                                    <div class="card-body text-center">
+                                        <h5 class="card-title"> Social media Design Food </h5>
+                                        <button class="btn btn-service">طلب خدمة مشابهة</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-2 mb-4">
+                                <div class="card project-card shadow-sm">
+                                    <iframe src="https://www.behance.net/embed/project/198384227?ilo0=1" height="316" width="100%" allowfullscreen lazyload frameborder="0"></iframe>
+                                    <div class="card-body text-center">
+                                        <h5 class="card-title"> Social media Design Food </h5>
+                                        <button class="btn btn-service">طلب خدمة مشابهة</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-2 mb-4">
+                                <div class="card project-card shadow-sm">
+                                    <iframe src="https://www.behance.net/embed/project/198384227?ilo0=1" height="316" width="100%" allowfullscreen lazyload frameborder="0"></iframe>
+                                    <div class="card-body text-center">
+                                        <h5 class="card-title"> Social media Design Food </h5>
+                                        <button class="btn btn-service">طلب خدمة مشابهة</button>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="col-md-2 mb-4">
+                                <div class="card project-card shadow-sm">
+                                    <iframe src="https://www.behance.net/embed/project/191574949?ilo0=1" height="316" width="100%" allowfullscreen lazyload frameborder="0"></iframe>
+                                    <div class="card-body text-center">
+                                        <h5 class="card-title">خدمات التسويق الرقمي 1</h5>
+                                        <button class="btn btn-service">طلب خدمة مشابهة</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- المزيد من الكروت هنا -->
+                        </div>
+                    </div>
+
+                    <!-- تنسيق هذه الcard في style.css -->
+                    <!-- الهوية البصرية -->
+                    <div class="category" id="visual-identity" style="display:none;">
+                        <h2 class="category-title"> الهوية البصرية </h2>
+                        <div class="row">
+                            <div class="col-md-2 mb-4">
+                                <div class="card project-card shadow-sm">
+                                    <iframe src="https://www.behance.net/embed/project/198384227?ilo0=1" height="316" width="100%" allowfullscreen lazyload frameborder="0"></iframe>
+                                    <div class="card-body text-center">
+                                        <h5 class="card-title"> Social media Design Food </h5>
+                                        <button class="btn btn-service">طلب خدمة مشابهة</button>
+                                    </div>
+                                </div>
+                            </div><!-- تكرار الكارد 10 مرات -->
+                            <div class="col-md-2 mb-4">
+                                <div class="card project-card shadow-sm">
+                                    <iframe src="https://www.behance.net/embed/project/198384227?ilo0=1" height="316" width="100%" allowfullscreen lazyload frameborder="0"></iframe>
+                                    <div class="card-body text-center">
+                                        <h5 class="card-title"> Social media Design Food </h5>
+                                        <button class="btn btn-service">طلب خدمة مشابهة</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-2 mb-4">
+                                <div class="card project-card shadow-sm">
+                                    <iframe src="https://www.behance.net/embed/project/198384227?ilo0=1" height="316" width="100%" allowfullscreen lazyload frameborder="0"></iframe>
+                                    <div class="card-body text-center">
+                                        <h5 class="card-title"> Social media Design Food </h5>
+                                        <button class="btn btn-service">طلب خدمة مشابهة</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-2 mb-4">
+                                <div class="card project-card shadow-sm">
+                                    <iframe src="https://www.behance.net/embed/project/198384227?ilo0=1" height="316" width="100%" allowfullscreen lazyload frameborder="0"></iframe>
+                                    <div class="card-body text-center">
+                                        <h5 class="card-title"> Social media Design Food </h5>
+                                        <button class="btn btn-service">طلب خدمة مشابهة</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-2 mb-4">
+                                <div class="card project-card shadow-sm">
+                                    <iframe src="https://www.behance.net/embed/project/198384227?ilo0=1" height="316" width="100%" allowfullscreen lazyload frameborder="0"></iframe>
+                                    <div class="card-body text-center">
+                                        <h5 class="card-title"> Social media Design Food </h5>
+                                        <button class="btn btn-service">طلب خدمة مشابهة</button>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="col-md-2 mb-4">
+                                <div class="card project-card shadow-sm">
+                                    <iframe src="https://www.behance.net/embed/project/191574949?ilo0=1" height="316" width="100%" allowfullscreen lazyload frameborder="0"></iframe>
+                                    <div class="card-body text-center">
+                                        <h5 class="card-title">خدمات التسويق الرقمي 1</h5>
+                                        <button class="btn btn-service">طلب خدمة مشابهة</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- المزيد من الكروت هنا -->
+                        </div>
+                    </div>
+                    <!-- ------------- -->
+                </div>
+            </div>
+        </section>
+        
+
+        
+
+        <!-- الفوتر -->
+        <footer class="bg-dark text-center text-white py-3">
+            <div class="container">
+                <p>© جميع الحقوق محفوظة لدى Black Marketing</p>
+                <div class="social-icons">
+                    <a href="#"><img src="/Image/facebook-icon.png" alt="Phone" width="30"></a>
+                    <a href="#"><img src="/Image/instagram-icon.png" alt="Phone" width="30"></a>
+                    <a href="#"><img src="/Image/whatsapp.png" alt="Phone" width="30"></a>
+                </div>
+            </div>
+        </footer>
+
+        <!-- استيراد Bootstrap JS -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="/js/script.js"></script>
+        <script src="/js/portfolio.js"></script>
+    </body>
+
+</html>

@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="ar">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Black Marketing</title>
+    <!-- استيراد Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- استيراد الخطوط -->
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+    <!-- استيراد CSS مخصص -->
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/cotact.css">
+    <link rel="stylesheet" href="/css/portfolio.css">
+</head>
+
+<body>
+    <body dir="rtl" class="light-mode">
+
+    <!-- الهيدر -->
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg co bg-dark">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a href="#" onclick="window.location.href = '/index.html';">الرئيسية</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./services.html">خدماتنا</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#who-we-are">عنا</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">اتصل بنا</a>
+                    </li>
+                </ul>
+            </div>
+            <a class="navbar-brand" href="#">
+                <img src="/Image/logo.png" alt="Black Marketing" width="10%">
+            </a>
+            <!-- الزر -->
+            <button class="contactBtn" data-bs-toggle="modal" data-bs-target="#contactModal">تواصل معنا</button>
+
+            <!-- المربع المنبثق -->
+            <div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                                aria-label="Close"></button>
+                            <h5 class="modal-title" id="contactModalLabel">تواصل معنا</h5>
+                        </div>
+                        <div class="modal-body">
+                            <h6>اختر طريقة للتواصل التي تناسبك</h6>
+                            <div class="social-icons">
+                                <a href="#"><img src="/Image/phone-call.png" alt="Phone" width="30"></a>
+                                <a href="#"><img src="/Image/whatsapp.png" alt="WhatsApp" width="30"></a>
+                                <a href="#"><img src="/Image/instagram-icon.png" alt="Instagram" width="30"></a>
+                                <a href="#"><img src="/Image/facebook-icon.png" alt="Facebook" width="30"></a>
+                            </div>
+                            <button class="btn btn-primary mt-3"
+                                onclick="document.getElementById('contact').scrollIntoView({behavior: 'smooth'});">طلب
+                                التواصل</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </nav>
+        <div class="navbar-bottom-line"></div>
+        <!-- <div class="jumbotron bg-primary text-white text-center py-5">
+            <h1 class="display-4">تواصل معنا الآن!</h1>
+            <p class="lead">نسعى لمساعدتك في تحقيق أهدافك بخدماتنا المبتكرة. لا تتردد في التواصل معنا الآن!</p>
+        </div> -->
+        
+
+
+ <!-- أزرار طافية -->
+ <div class="floating-buttons">
+    <!-- زر الواتساب -->
+    <a href="https://wa.me/01090412218" target="_blank" class="btn-whatsapp" aria-label="تواصل عبر واتساب">
+        <img src="/Image/whatsapp.png" alt="واتساب" class="icon">
+    </a>
+    <!-- زر المكالمات -->
+    <a href="tel:01090412218" class="btn-call" aria-label="اتصل الآن">
+        <img src="/Image//phone-call.png" alt="اتصال" class="icon">
+    </a>
+</div>
+
+        
+<!-- ----------------------- -->
+
+<div class="promo-banner py-4 text-center">
+    <h2 class="promo-title">⚡ عروض خاصة لفترة محدودة! ⚡</h2>
+    <p class="promo-description">احصل على خصم 20% على خدمات تصميم السوشيال ميديا!</p>
+    <button class="btn btn-primary promo-btn">اطلب الآن</button>
+  </div>
+  
+
+
+
+
+<!-- ------------------ -->
+
+<div class="container py-5">
+    <!-- عنوان القسم -->
+    <h2 class="category-title"> بعض أعمالمنا في سوشيال ميديا </h2>
+
+    <!-- كروت عرض المشاريع -->
+    <div class="row mt-4">
+        <!-- كارت المشروع -->
+        <div class="col-md-4 mb-4">
+            <div class="card project-card shadow-sm">
+                <iframe src="https://www.behance.net/embed/project/198384227?ilo0=1" height="316" width="100%" allowfullscreen lazyload frameborder="0"></iframe>
+                <div class="card-body text-center">
+                    <h5 class="card-title">سوشيال ميديا</h5>
+                    <button class="btn btn-service">طلب خدمة مشابهة</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- كارت مشروع آخر -->
+        <div class="col-md-4 mb-4">
+            <div class="card project-card shadow-sm">
+                <iframe src="https://www.behance.net/embed/project/198384227?ilo0=1" height="316" width="100%" allowfullscreen lazyload frameborder="0"></iframe>
+                <div class="card-body text-center">
+                    <h5 class="card-title">سوشيال ميديا</h5>
+                    <button class="btn btn-service">طلب خدمة مشابهة</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- كارت مشروع آخر -->
+        <div class="col-md-4 mb-4">
+            <div class="card project-card shadow-sm">
+                <iframe src="https://www.behance.net/embed/project/198384227?ilo0=1" height="316" width="100%" allowfullscreen lazyload frameborder="0"></iframe>
+                <div class="card-body text-center">
+                    <h5 class="card-title">سوشيال ميديا</h5>
+                    <button class="btn btn-service">طلب خدمة مشابهة</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- ----------------- -->
+
+
+             <!-- الفوتر -->
+    <footer class="bg-dark text-center text-white py-3">
+        <div class="container">
+            <p>© جميع الحقوق محفوظة لدى Black Marketing</p>
+            <div class="social-icons">
+                <a href="#"><img src="/Image/facebook-icon.png" alt="Phone" width="30"></a>
+                <a href="#"><img src="/Image/instagram-icon.png" alt="Phone" width="30"></a>
+                <a href="#"><img src="/Image/whatsapp.png" alt="Phone" width="30"></a>
+             
+            </div>
+        </div>
+    </footer>
+
+
+            <!-- استيراد Bootstrap JS -->
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+            <script src="/js/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,16 @@
+.jumbotron {
+    background: linear-gradient(90deg, #007bff, #0056b3); /* تأثير التدرج */
+    border-radius: 10px; /* زوايا دائرية */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* ظل خفيف */
+    margin-bottom: 30px; /* مسافة أسفل البانر */
+}
+
+.jumbotron h1 {
+    font-family: 'Cairo', sans-serif; /* استخدام الخط المناسب */
+    font-weight: bold;
+}
+
+.jumbotron p {
+    font-size: 1.2rem;
+}
+
