@@ -19,55 +19,34 @@
 <body class="dark-mode" dir="rtl">
 <!-- الهيدر -->
 <!-- Navbar -->
-<nav class="navbar navbar-expand-lg co bg-dark">
+
+<nav class="navbar navbar-expand-lg bg-dark navbar-dark">
 <div class="container-fluid">
+<a class="navbar-brand" href="index.html">
+<img alt="Black Marketing" src="Image/logo.png" width="10%"/>
+</a>
 <button aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-bs-target="#navbarNav" data-bs-toggle="collapse" type="button">
 <span class="navbar-toggler-icon"></span>
 </button>
 <div class="collapse navbar-collapse" id="navbarNav">
-<ul class="navbar-nav">
+<ul class="navbar-nav ms-auto">
 <li class="nav-item">
-<a href="#" onclick="window.location.href = '/index.html';">الرئيسية</a>
+<a class="nav-link" href="index.html">الصفحة الرئيسية</a>
 </li>
 <li class="nav-item">
-<a class="nav-link" href="./services.html">خدماتنا</a>
+<a class="nav-link" href="services.html">خدماتنا</a>
 </li>
 <li class="nav-item">
-<a class="nav-link" href="#who-we-are">عنا</a>
+<a class="nav-link" href="index.html#who-we-are">عنا</a>
 </li>
 <li class="nav-item">
 <a class="nav-link" href="contact.html">اتصل بنا</a>
 </li>
 </ul>
 </div>
-<a class="navbar-brand" href="#">
-<img alt="Black Marketing" src="/Image/logo.png" width="10%"/>
-</a>
-<!-- الزر -->
-<button class="contactBtn" data-bs-target="#contactModal" data-bs-toggle="modal">تواصل معنا</button>
-<!-- المربع المنبثق -->
-<div aria-hidden="true" aria-labelledby="contactModalLabel" class="modal fade" id="contactModal" tabindex="-1">
-<div class="modal-dialog">
-<div class="modal-content">
-<div class="modal-header">
-<button aria-label="Close" class="btn-close btn-close-white" data-bs-dismiss="modal" type="button"></button>
-<h5 class="modal-title" id="contactModalLabel">تواصل معنا</h5>
 </div>
-<div class="modal-body">
-<h6>اختر طريقة للتواصل التي تناسبك</h6>
-<div class="social-icons">
-<a href="#"><img alt="Phone" src="/Image/phone-call.png" width="30"/></a>
-<a href="#"><img alt="WhatsApp" src="/Image/whatsapp.png" width="30"/></a>
-<a href="#"><img alt="Instagram" src="/Image/instagram-icon.png" width="30"/></a>
-<a href="#"><img alt="Facebook" src="/Image/facebook-icon.png" width="30"/></a>
-</div>
-<button class="btn btn-primary mt-3" onclick="document.getElementById('contact').scrollIntoView({behavior: 'smooth'});">طلب
-                                    التواصل</button>
-</div>
-</div>
-</div>
-</div>
-</div></nav>
+</nav>
+
 <div class="navbar-bottom-line"></div>
 <section class="main-section">
 <!-- بانر الخصم -->
@@ -452,7 +431,6 @@
 <script src="/js/script.js"></script>
 <script src="/js/portfolio.js"></script>
 </body>
-
 <div style="display:flex; flex-wrap:wrap; gap:30px; justify-content:center; padding:40px 0;">
 <!-- Flip Card -->
 <div style="width:300px; height:400px; perspective:1000px;">
