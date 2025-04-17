@@ -48,7 +48,7 @@ body.light-mode .btn-outline-light {
     border-radius: 50%;
     background: rgba(255, 215, 0, 0.3); /* ذهبي شفاف */
     animation: float 10s infinite ease-in-out;
-    filter: blur(10px);
+    filter: blur(6px); opacity: 0.3;
 }
 
 .circle {
@@ -87,7 +87,7 @@ body.light-mode .btn-outline-light {
     background-size: contain;
     background-repeat: no-repeat;
     animation: float 10s infinite ease-in-out;
-    filter: blur(5px);
+    filter: blur(4px); opacity: 0.4;
 }
 
 .facebook {
